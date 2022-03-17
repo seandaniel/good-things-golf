@@ -18,7 +18,7 @@
 
 <header>
   <div class="wrapper">
-    <h1><a href="<?php get_site_url() ?>"><?php echo get_bloginfo(); ?></a></h1>
+    <h1><a href="<?php get_home_url(); ?>"><?php echo get_bloginfo(); ?></a></h1>
   </div> 
 </header>
 
