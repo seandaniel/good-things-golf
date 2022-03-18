@@ -4,9 +4,9 @@
 <div class="wrapper">
 
 <?php //content ?>
-  <div class="content">
+  <ul class="content-ul">
       <?php get_template_part( 'loop', 'index' );	?>
-  </div>
+  </ul>
 
   <!-- <?php get_sidebar(); ?> -->
 

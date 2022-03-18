@@ -18,7 +18,7 @@
 
 <header>
   <div class="wrapper">
-    <h1><a href="<?php get_home_url(); ?>"><?php echo get_bloginfo(); ?></a></h1>
+    <h1><a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo(); ?></a> <img src="styles/golf-hole-logo.svg" alt="A golf flag"></h1>
   </div> 
 </header>
 

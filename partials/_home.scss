@@ -1,0 +1,63 @@
+.content-ul {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    // margin-bottom 10px coming from h2 padding and 3px for border
+    margin: 0 40px 27px 0;
+    article a {
+      display: inline-block;
+      border-radius: 2px;
+      img {
+        height: 400px;
+        min-width: 300px;
+        width: 300px;
+        border-radius: 4px;
+        object-fit: cover;
+        display: inline-block;
+      }
+      h2 {
+        position: relative;
+        font-family: $primaryFont;
+        color: $quaternaryColor;
+        font-size: 14px;
+        padding: 10px 0;
+        transition: color 0.35s width 0.35s;
+      }
+    }
+  }
+}
+
+.content-ul li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.content-ul li article a h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  opacity: 0;
+  transition: opacity 0.35s, width 0.35s;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: $secondaryColor;
+}
+
+@media (-webkit-max-device-pixel-ratio: 1) {
+  .content-ul li h2 {
+  }
+
+  .content-ul li a:hover {
+    h2 {
+      color: $primaryColor;
+    }
+    h2::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}

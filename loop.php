@@ -16,15 +16,15 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+	<li>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<?php echo get_the_post_thumbnail($post_id, 'full'); ?>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          	<?php the_title(); ?>
-        		</a>
-      	</h2>
-
+			<a href="<?php the_permalink(); ?>" title="View <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+				<?php echo get_the_post_thumbnail($post_id, 'full'); ?>
+				<h2 class="entry-title"><?php the_title(); ?></h2>
+			</a>
 		</article><!-- #post-## -->
+	</li>
+	
 <?php endwhile; // End the loop. Whew. ?>
 
 <?php // Display navigation to next/previous pages when applicable ?>
