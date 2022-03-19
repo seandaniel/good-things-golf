@@ -47,17 +47,13 @@
   background-color: $secondaryColor;
 }
 
-@media (-webkit-max-device-pixel-ratio: 1) {
-  .content-ul li h2 {
+.content-ul li a:hover,
+.content-ul li a:focus {
+  h2 {
+    color: $primaryColor;
   }
-
-  .content-ul li a:hover {
-    h2 {
-      color: $primaryColor;
-    }
-    h2::after {
-      width: 100%;
-      opacity: 1;
-    }
+  h2::after {
+    width: 100%;
+    opacity: 1;
   }
 }
