@@ -1,19 +1,12 @@
-footer {
-  background: $secondaryColor;
-  background-image: linear-gradient(
-    to right,
-    $secondaryColor 50%,
-    $tertiaryColor
-  );
-  .wrapper {
-    padding: 40px 0;
-    display: flex;
-    justify-content: flex-end;
-    h3 {
-      text-transform: lowercase;
-      position: relative;
-      display: inline-block;
-    }
+footer .wrapper {
+  padding-bottom: 40px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  h3 {
+    text-transform: lowercase;
+    position: relative;
+    display: inline-block;
   }
 }
 
@@ -27,6 +20,6 @@ footer .wrapper h3::before {
   border-top-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  background-color: $secondaryColor;
+  background-color: $tertiaryColor;
   height: 3px;
 }
