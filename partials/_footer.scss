@@ -1,9 +1,9 @@
 footer {
-  background: $quaternaryColor;
+  background: $secondaryColor;
   background-image: linear-gradient(
     to right,
-    $quaternaryColor 50%,
-    $secondaryColor
+    $secondaryColor 50%,
+    $tertiaryColor
   );
   .wrapper {
     padding: 40px 0;
@@ -27,6 +27,6 @@ footer .wrapper h3::before {
   border-top-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  background-color: $quaternaryColor;
+  background-color: $secondaryColor;
   height: 3px;
 }
