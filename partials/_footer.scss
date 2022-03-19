@@ -1,0 +1,32 @@
+footer {
+  background: $quaternaryColor;
+  background-image: linear-gradient(
+    to right,
+    $quaternaryColor 50%,
+    $secondaryColor
+  );
+  .wrapper {
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+    h3 {
+      text-transform: lowercase;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
+footer .wrapper h3::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: $quaternaryColor;
+  height: 3px;
+}
