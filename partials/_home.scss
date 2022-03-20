@@ -24,6 +24,22 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .content-ul {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-ul {
+    column-count: 2;
+    column-gap: 20px;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .content-ul li article a h2::after {
   content: "";
   position: absolute;

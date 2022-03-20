@@ -40,3 +40,19 @@ header .wrapper {
   background-color: $tertiaryColor;
   height: 4px;
 }
+
+@media (max-width: 340px) {
+  header .wrapper a h1 {
+    font-size: 30px;
+  }
+  header .wrapper a img {
+    margin-left: 10px;
+    // 20% smaller
+    height: 38.4px;
+    width: 42.4px;
+  }
+
+  .h1-container::after {
+    top: 50px;
+  }
+}

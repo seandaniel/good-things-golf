@@ -16,7 +16,7 @@
       <h2><?php echo get_the_date(); ?></h2>
 
       <div class="home-container">
-        <a href="<?php echo get_home_url(); ?>" title="Home"><i class="fa-solid fa-house" aria-hidden="true"></i></a>
+        <a href="<?php echo get_home_url(); ?>" title="Home"><i class="fa-solid fa-circle-arrow-left"></i></a>
       </div>
 
 
