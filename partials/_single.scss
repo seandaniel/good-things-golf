@@ -1,9 +1,21 @@
+.item-level-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    max-width: 800px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
 .home-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
   a {
-    font-size: 20px;
+    font-size: 25px;
     transition: color 0.35s;
     &:hover,
     &:focus {
