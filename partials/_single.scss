@@ -1,0 +1,13 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  a {
+    font-size: 20px;
+    transition: color 0.35s;
+    &:hover,
+    &:focus {
+      color: $tertiaryColor;
+    }
+  }
+}
