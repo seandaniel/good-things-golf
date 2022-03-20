@@ -2,15 +2,31 @@ footer .wrapper {
   padding-bottom: 40px;
   margin-top: 100px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   h3 {
     text-transform: lowercase;
     position: relative;
     display: inline-block;
   }
+  .footer-icon-container {
+    position: relative;
+    i {
+      font-size: 20px;
+      transition: color 0.35s;
+      &:hover,
+      &:focus {
+        color: $secondaryColor;
+      }
+    }
+  }
 }
 
-footer .wrapper h3::before {
+.footer-icon-container a:first-child {
+  margin-right: 10px;
+}
+
+footer .wrapper h3::before,
+footer .wrapper .footer-icon-container::before {
   content: "";
   position: absolute;
   top: -10px;

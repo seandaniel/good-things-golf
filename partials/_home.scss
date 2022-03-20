@@ -3,14 +3,11 @@
   column-gap: 40px;
   li {
     // margin-bottom 10px coming from h2 padding and 3px for border
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     article a {
       display: inline-block;
       border-radius: 2px;
       img {
-        // height: 400px;
-        // min-width: 300px;
-        // width: 300px;
         border-radius: 4px;
         object-fit: cover;
         display: inline-block;
@@ -52,4 +49,41 @@
     top: 30px;
     opacity: 1;
   }
+}
+
+.next-prev-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  a {
+    font-family: $secondaryFont;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: color 0.35s;
+    i {
+      color: $tertiaryColor;
+      transition: color 0.35s;
+    }
+  }
+}
+
+.next-prev-container a:hover {
+  color: $tertiaryColor;
+}
+
+.next-prev-container a:hover i {
+  color: $primaryColor;
+}
+
+.next-prev-container a:first-child i {
+  margin-right: 5px;
+}
+
+.next-prev-container a:last-child i {
+  margin-left: 5px;
+}
+
+.next-prev-container a:first-child {
+  margin-right: 20px;
 }

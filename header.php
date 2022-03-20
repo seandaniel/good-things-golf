@@ -8,7 +8,7 @@
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/d9461c25c6.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/caf1be1cc3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() . "/wp-content/themes/starter-theme/styles/styles.css"?>" />
   <?php wp_head(); ?>
 </head>
@@ -16,7 +16,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header id="top">
   <div class="wrapper">
     <section class="h1-container">
       <a href="<?php echo get_home_url(); ?>">
@@ -28,8 +28,3 @@
 </header>
 
 <main id="maincontent">
-
-    <!-- <?php wp_nav_menu( array(
-      'theme_location' => 'primary',
-      'container_class' => 'menu'
-    )); ?> -->

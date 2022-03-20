@@ -14,21 +14,29 @@
 
 <?php // if there are posts, Start the Loop. ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+ <ul class="content-ul">
 
-	<li>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<a href="<?php the_permalink(); ?>" title="View <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-				<?php echo get_the_post_thumbnail($post_id, 'full'); ?>
-				<h2 class="entry-title"><?php the_title(); ?></h2>
-			</a>
-		</article><!-- #post-## -->
-	</li>
-	
-<?php endwhile; // End the loop. Whew. ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+
+		<li>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<a href="<?php the_permalink(); ?>" title="View <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+					<?php echo get_the_post_thumbnail($post_id, 'full'); ?>
+					<h2 class="entry-title"><?php the_title(); ?></h2>
+				</a>
+			</article><!-- #post-## -->
+		</li>
+		
+	<?php endwhile; // End the loop. Whew. ?>
+
+</ul>
+
+
 
 <?php // Display navigation to next/previous pages when applicable ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-  <p class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></p>
-  <p class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></p>
+	<section class="next-prev-container">
+		<?php echo get_previous_posts_link('<i class="fa-solid fa-arrow-left"></i> Older Posts'); ?>
+  	<?php echo get_next_posts_link('More Posts <i class="fa-solid fa-arrow-right"></i>'); ?>
+	</section>
 <?php endif; ?>
