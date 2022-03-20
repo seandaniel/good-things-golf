@@ -5,10 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <!-- og meta tags -->
+  <meta property="og:title" content="Good Things Golf" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.goodthingsgolf.com" />
+  <!-- favicon -->
+  <link type="image/png" href="<?php echo get_template_directory_uri() . "/styles/favicon.png" ?>" rel="icon">
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/caf1be1cc3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/caf1be1cc3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() . "/wp-content/themes/starter-theme/styles/styles.css"?>" />
   <?php wp_head(); ?>
 </head>
