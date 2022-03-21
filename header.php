@@ -27,7 +27,7 @@
     <section class="h1-container">
       <a href="<?php echo get_home_url(); ?>">
         <h1><?php echo get_bloginfo(); ?></h1>
-        <img src="<?php echo get_template_directory_uri() . "/styles/golf-hole-logo.svg" ?>" alt="A golf flag">
+        <img src="<?php echo get_template_directory_uri() . "/assets/golf-hole-logo.svg" ?>" alt="A golf flag">
       </a>
     </section>
   </div> 
