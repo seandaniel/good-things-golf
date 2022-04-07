@@ -3,6 +3,7 @@
   column-gap: 40px;
   li {
     // margin-bottom 10px coming from h2 padding and 3px for border
+    // border: 2px solid black;
     margin-bottom: 30px;
     article a {
       display: inline-block;
@@ -11,6 +12,8 @@
         border-radius: 4px;
         object-fit: cover;
         display: inline-block;
+        width: 100%;
+        height: 100%;
       }
       h2 {
         position: relative;
