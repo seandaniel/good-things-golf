@@ -2,8 +2,7 @@
   column-count: 4;
   column-gap: 40px;
   li {
-    // margin-bottom 10px coming from h2 padding and 3px for border
-    // border: 2px solid black;
+    // extra margin-bottom 10px coming from h2 padding
     margin-bottom: 30px;
     article a {
       display: inline-block;
@@ -27,7 +26,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .content-ul {
     column-count: 3;
   }
@@ -67,6 +66,12 @@
   h2::after {
     top: 30px;
     opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-ul li article a h2::after {
+    display: none;
   }
 }
 
